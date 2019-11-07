@@ -1,0 +1,10 @@
+# Minimum packages for azure functions
+azure-functions
+azure-storage-blob
+azure-storage-common
+azure-storage-file
+azure-storage-queue
+grpcio==1.14.2
+grpcio-tools==1.14.2
+protobuf==3.6.1
+six==1.11.0
