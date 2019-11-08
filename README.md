@@ -8,6 +8,10 @@ Testing with Azure functions.
 
 > OBS: When using queue triggers, if a message has not been successfuly processed, a *poison* queue is automatically created to store it.
 
+The idea of the bindings is that if we are specifying a variable such as `inputblob/{hello}`, then the JSON body in the queue message should be `{"hello": "<real-blob-name>"}`.
+
+> OBS: Note that f-strings are not supported in Azure Functions.
+
 # Credits
 
 * Great [repo](https://github.com/yokawasa/azure-functions-python-samples) with examples.
